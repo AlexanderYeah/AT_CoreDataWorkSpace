@@ -35,6 +35,8 @@
     _dataSource = [NSMutableArray array];
     
     
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@YES,NSInferMappingModelAutomaticallyOption, @YES,NSMigratePersistentStoresAutomaticallyOption, nil];
+    
     // 更新数据源 查询数据
     NSFetchRequest *req  = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
     [_dataSource removeAllObjects];
@@ -45,7 +47,6 @@
     [self.tableView reloadData];
     
 }
-
 
 
 
@@ -106,7 +107,8 @@
     
     stu.age =  [[NSString stringWithFormat:@"%d",arc4random()% 100] integerValue];
     
-//    stu.sex = (arc4random()%100) / 2 ? @"男":@"女";
+    stu.sex = (arc4random()%100) / 2 ? @"男":@"女";
+    
     
     
     //2 查询所有的请求
@@ -333,7 +335,8 @@
     }
     
     Student *stu = _dataSource[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@---年龄:%d",stu.name,stu.age];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@--%@--年龄:%d",stu.name,stu.sex,stu.age];
     cell.textLabel.numberOfLines = 0;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

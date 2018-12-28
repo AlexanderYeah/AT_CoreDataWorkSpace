@@ -2,7 +2,7 @@
 //  Student+CoreDataProperties.m
 //  AT_CoreDataDemo1
 //
-//  Created by TrimbleZhang on 2018/12/26.
+//  Created by TrimbleZhang on 2018/12/28.
 //  Copyright © 2018 AlexanderYeah. All rights reserved.
 //
 //
@@ -15,8 +15,9 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"Student"];
 }
 
-@dynamic name;
 @dynamic age;
+@dynamic name;
 @dynamic which_class;
+@dynamic sex;
 
 @end

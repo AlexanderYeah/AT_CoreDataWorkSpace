@@ -16,8 +16,8 @@
 		117332BD21D3131800A0D507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117332BC21D3131800A0D507 /* main.m */; };
 		117332C721D3131800A0D507 /* AT_CoreDataDemo1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117332C621D3131800A0D507 /* AT_CoreDataDemo1Tests.m */; };
 		117332D221D3131800A0D507 /* AT_CoreDataDemo1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117332D121D3131800A0D507 /* AT_CoreDataDemo1UITests.m */; };
-		117332E321D3170500A0D507 /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 117332E121D3170500A0D507 /* Student+CoreDataClass.m */; };
-		117332E421D3170500A0D507 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 117332E221D3170500A0D507 /* Student+CoreDataProperties.m */; };
+		11C80C8621D5D7070004DDC6 /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C80C8421D5D7070004DDC6 /* Student+CoreDataClass.m */; };
+		11C80C8721D5D7070004DDC6 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C80C8521D5D7070004DDC6 /* Student+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,11 @@
 		117332CD21D3131800A0D507 /* AT_CoreDataDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AT_CoreDataDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117332D121D3131800A0D507 /* AT_CoreDataDemo1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AT_CoreDataDemo1UITests.m; sourceTree = "<group>"; };
 		117332D321D3131800A0D507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		117332DF21D3170500A0D507 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
-		117332E021D3170500A0D507 /* Student+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
-		117332E121D3170500A0D507 /* Student+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
-		117332E221D3170500A0D507 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		11C80C8121D5D5FB0004DDC6 /* AT_CoreDataDemo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AT_CoreDataDemo 2.xcdatamodel"; sourceTree = "<group>"; };
+		11C80C8221D5D7070004DDC6 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		11C80C8321D5D7070004DDC6 /* Student+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		11C80C8421D5D7070004DDC6 /* Student+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		11C80C8521D5D7070004DDC6 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +110,10 @@
 		117332A921D3131600A0D507 /* AT_CoreDataDemo1 */ = {
 			isa = PBXGroup;
 			children = (
-				117332E021D3170500A0D507 /* Student+CoreDataClass.h */,
-				117332E121D3170500A0D507 /* Student+CoreDataClass.m */,
-				117332DF21D3170500A0D507 /* Student+CoreDataProperties.h */,
-				117332E221D3170500A0D507 /* Student+CoreDataProperties.m */,
+				11C80C8221D5D7070004DDC6 /* Student+CoreDataProperties.h */,
+				11C80C8321D5D7070004DDC6 /* Student+CoreDataClass.h */,
+				11C80C8421D5D7070004DDC6 /* Student+CoreDataClass.m */,
+				11C80C8521D5D7070004DDC6 /* Student+CoreDataProperties.m */,
 				117332AA21D3131600A0D507 /* AppDelegate.h */,
 				117332AB21D3131600A0D507 /* AppDelegate.m */,
 				117332AD21D3131600A0D507 /* ViewController.h */,
@@ -276,10 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				117332B521D3131600A0D507 /* AT_CoreDataDemo1.xcdatamodeld in Sources */,
-				117332E421D3170500A0D507 /* Student+CoreDataProperties.m in Sources */,
+				11C80C8721D5D7070004DDC6 /* Student+CoreDataProperties.m in Sources */,
 				117332AF21D3131600A0D507 /* ViewController.m in Sources */,
 				117332BD21D3131800A0D507 /* main.m in Sources */,
-				117332E321D3170500A0D507 /* Student+CoreDataClass.m in Sources */,
+				11C80C8621D5D7070004DDC6 /* Student+CoreDataClass.m in Sources */,
 				117332AC21D3131600A0D507 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +597,7 @@
 		117332B321D3131600A0D507 /* AT_CoreDataDemo1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				11C80C8121D5D5FB0004DDC6 /* AT_CoreDataDemo 2.xcdatamodel */,
 				117332B421D3131600A0D507 /* AT_CoreDataDemo1.xcdatamodel */,
 			);
 			currentVersion = 117332B421D3131600A0D507 /* AT_CoreDataDemo1.xcdatamodel */;
