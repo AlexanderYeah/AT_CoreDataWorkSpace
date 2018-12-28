@@ -274,15 +274,19 @@
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"age > 80"];
     
     req.predicate = pre;
+ 
     
-    
-    // 通过这个属性实现分页
-    //request.fetchOffset = 0;
-    
-    // 每页显示多少条数据
-    //request.fetchLimit = 6;
-    
+    // 只查询数量 不查询对象
     NSArray *resArray = [_context executeFetchRequest:req error:nil];
+    
+    // 执行查询操作，数组中只返回一个对象，就是计算出的count 值
+//
+//    NSUInteger count = [_context countForFetchRequest:req error:nil];
+//
+//    NSLog(@"count--%ld",count);
+    
+//
+
     _dataSource = [NSMutableArray arrayWithArray:resArray];
     [self.tableView reloadData];
     

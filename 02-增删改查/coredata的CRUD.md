@@ -277,3 +277,58 @@
 }
 ```
 
+
+
+6 获取查询条件的数据数
+
+在开发过程中，有时候只需要所需数据的count值，如果像之前一样获取所有对象加载到内存，在去遍历是比较消耗内存的。
+
+苹果提供了两种方式，去直接查询count值，count值的查询是在数据库层面完成的，不需要将托管对象加载到内存中，避免内存的大开销。
+
+1. resultType 通过设置NSFetchRequest 对象的resultType 来获取count 值
+
+```objective-c
+    // 1 创建查询请求
+    NSFetchRequest *req =[NSFetchRequest fetchRequestWithEntityName:@"Student"];
+    
+    // 过滤条件
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"age > 80"];
+    
+    req.predicate = pre;
+    // 设置查询获取数量
+    req.resultType = NSCountResultType;
+
+    // 只查询数量 不查询对象
+    NSArray *resArray = [_context executeFetchRequest:req error:nil];
+    
+    // 执行查询操作，数组中只返回一个对象，就是计算出的count 值
+    NSInteger count = [resArray.firstObject integerValue];
+
+    NSLog(@"count--%ld",count);
+    
+```
+
+
+
+2 直接调用countForFetchRequest 方法获取数量
+
+```objective-c
+    // 1 创建查询请求
+    NSFetchRequest *req =[NSFetchRequest fetchRequestWithEntityName:@"Student"];
+    
+    // 过滤条件
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"age > 80"];
+    
+    req.predicate = pre;
+ 
+    
+    // 只查询数量 不查询对象
+    NSArray *resArray = [_context executeFetchRequest:req error:nil];
+    
+    // 执行查询操作，数组中只返回一个对象，就是计算出的count 值
+    
+    NSUInteger count = [_context countForFetchRequest:req error:nil];
+
+    NSLog(@"count--%ld",count);
+```
+
