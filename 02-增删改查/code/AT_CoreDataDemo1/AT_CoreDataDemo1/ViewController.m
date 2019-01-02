@@ -35,8 +35,6 @@
     _dataSource = [NSMutableArray array];
     
     
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@YES,NSInferMappingModelAutomaticallyOption, @YES,NSMigratePersistentStoresAutomaticallyOption, nil];
-    
     // 更新数据源 查询数据
     NSFetchRequest *req  = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
     [_dataSource removeAllObjects];
@@ -47,6 +45,7 @@
     [self.tableView reloadData];
     
 }
+
 
 
 
@@ -107,8 +106,7 @@
     
     stu.age =  [[NSString stringWithFormat:@"%d",arc4random()% 100] integerValue];
     
-    stu.sex = (arc4random()%100) / 2 ? @"男":@"女";
-    
+//    stu.sex = (arc4random()%100) / 2 ? @"男":@"女";
     
     
     //2 查询所有的请求
@@ -272,23 +270,33 @@
     // 1 创建查询请求
     NSFetchRequest *req =[NSFetchRequest fetchRequestWithEntityName:@"Student"];
     
-    // 过滤条件
-    NSPredicate *pre = [NSPredicate predicateWithFormat:@"age > 80"];
+    // 过滤条件 年龄大于80
+//    NSPredicate *pre = [NSPredicate predicateWithFormat:@"age > 80"];
+    // 过滤条件 BETWEEN 年龄在27 到 30 之间的范围 IN 是 包含，过滤包含27 或者 28的对象
+//    NSPredicate *pre = [NSPredicate predicateWithFormat:@"age BETWEEN {27,30}"];
+//    NSPredicate *pre = [NSPredicate predicateWithFormat:@"age BETWEEN {27,28}"];
     
+    // 字符串本身 找到name等于某个字符串的操作
+//    NSPredicate *pre = [NSPredicate predicateWithFormat:@"name == '编号322'"];
+    // [c]不区分大小写
+    // [d]不区分发音符号即没有重音符号
+    // [cd]既不区分大小写，也不区分发音符号
+    
+    
+//    *注*: 星号 "*" : 代表0个或多个字符
+//    问号 "?" : 代表一个字符
+    // 找出编号开头的name
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"name  LIKE[cd] '编号*'"];
     req.predicate = pre;
- 
     
-    // 只查询数量 不查询对象
+    
+    // 通过这个属性实现分页
+    //request.fetchOffset = 0;
+    
+    // 每页显示多少条数据
+    //request.fetchLimit = 6;
+    
     NSArray *resArray = [_context executeFetchRequest:req error:nil];
-    
-    // 执行查询操作，数组中只返回一个对象，就是计算出的count 值
-//
-//    NSUInteger count = [_context countForFetchRequest:req error:nil];
-//
-//    NSLog(@"count--%ld",count);
-    
-//
-
     _dataSource = [NSMutableArray arrayWithArray:resArray];
     [self.tableView reloadData];
     
@@ -335,8 +343,7 @@
     }
     
     Student *stu = _dataSource[indexPath.row];
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@--%@--年龄:%d",stu.name,stu.sex,stu.age];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@---年龄:%d",stu.name,stu.age];
     cell.textLabel.numberOfLines = 0;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
