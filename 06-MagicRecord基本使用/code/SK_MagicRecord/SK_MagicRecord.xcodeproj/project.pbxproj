@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11162E0321E32CB200BFC2AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162E0221E32CB200BFC2AD /* AppDelegate.m */; };
+		11162E0621E32CB200BFC2AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162E0521E32CB200BFC2AD /* ViewController.m */; };
+		11162E0921E32CB200BFC2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11162E0721E32CB200BFC2AD /* Main.storyboard */; };
+		11162E0C21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11162E0A21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodeld */; };
+		11162E0E21E32CB500BFC2AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11162E0D21E32CB500BFC2AD /* Assets.xcassets */; };
+		11162E1121E32CB500BFC2AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11162E0F21E32CB500BFC2AD /* LaunchScreen.storyboard */; };
+		11162E1421E32CB500BFC2AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162E1321E32CB500BFC2AD /* main.m */; };
+		11162E1E21E32CB500BFC2AD /* SK_MagicRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162E1D21E32CB500BFC2AD /* SK_MagicRecordTests.m */; };
+		11162E2921E32CB500BFC2AD /* SK_MagicRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162E2821E32CB500BFC2AD /* SK_MagicRecordUITests.m */; };
+		11162EF621E345B600BFC2AD /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162EF221E345B600BFC2AD /* Person+CoreDataClass.m */; };
+		11162EF721E345B600BFC2AD /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 11162EF421E345B600BFC2AD /* Person+CoreDataProperties.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11162E1A21E32CB500BFC2AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11162DF621E32CB200BFC2AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11162DFD21E32CB200BFC2AD;
+			remoteInfo = SK_MagicRecord;
+		};
+		11162E2521E32CB500BFC2AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11162DF621E32CB200BFC2AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11162DFD21E32CB200BFC2AD;
+			remoteInfo = SK_MagicRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BE0A67B82FF73FD56A531B4 /* Pods-SK_MagicRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SK_MagicRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SK_MagicRecord/Pods-SK_MagicRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		11162DFE21E32CB200BFC2AD /* SK_MagicRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SK_MagicRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11162E0121E32CB200BFC2AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11162E0221E32CB200BFC2AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11162E0421E32CB200BFC2AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11162E0521E32CB200BFC2AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11162E0821E32CB200BFC2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11162E0B21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SK_MagicRecord.xcdatamodel; sourceTree = "<group>"; };
+		11162E0D21E32CB500BFC2AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11162E1021E32CB500BFC2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11162E1221E32CB500BFC2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11162E1321E32CB500BFC2AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11162E1921E32CB500BFC2AD /* SK_MagicRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SK_MagicRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11162E1D21E32CB500BFC2AD /* SK_MagicRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SK_MagicRecordTests.m; sourceTree = "<group>"; };
+		11162E1F21E32CB500BFC2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11162E2421E32CB500BFC2AD /* SK_MagicRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SK_MagicRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11162E2821E32CB500BFC2AD /* SK_MagicRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SK_MagicRecordUITests.m; sourceTree = "<group>"; };
+		11162E2A21E32CB500BFC2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11162EF021E335D600BFC2AD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		11162EF221E345B600BFC2AD /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Person+CoreDataClass.m"; path = "/Users/zhangtianbao/Desktop/SKGit/AT_CoreDataWorkSpace/06-MagicRecord/code/SK_MagicRecord/SK_MagicRecord/Person+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		11162EF321E345B600BFC2AD /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Person+CoreDataClass.h"; path = "/Users/zhangtianbao/Desktop/SKGit/AT_CoreDataWorkSpace/06-MagicRecord/code/SK_MagicRecord/SK_MagicRecord/Person+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		11162EF421E345B600BFC2AD /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Person+CoreDataProperties.m"; path = "/Users/zhangtianbao/Desktop/SKGit/AT_CoreDataWorkSpace/06-MagicRecord/code/SK_MagicRecord/SK_MagicRecord/Person+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		11162EF521E345B600BFC2AD /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Person+CoreDataProperties.h"; path = "/Users/zhangtianbao/Desktop/SKGit/AT_CoreDataWorkSpace/06-MagicRecord/code/SK_MagicRecord/SK_MagicRecord/Person+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		CBF2C424D8EB6D72D4222B37 /* libPods-SK_MagicRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SK_MagicRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D662003D926D49B7A8AF7DCA /* Pods-SK_MagicRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SK_MagicRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-SK_MagicRecord/Pods-SK_MagicRecord.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11162DFB21E32CB200BFC2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11162E1621E32CB500BFC2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11162E2121E32CB500BFC2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11162DF521E32CB200BFC2AD = {
+			isa = PBXGroup;
+			children = (
+				11162E0021E32CB200BFC2AD /* SK_MagicRecord */,
+				11162E1C21E32CB500BFC2AD /* SK_MagicRecordTests */,
+				11162E2721E32CB500BFC2AD /* SK_MagicRecordUITests */,
+				11162DFF21E32CB200BFC2AD /* Products */,
+				11162EEF21E335D500BFC2AD /* Frameworks */,
+				C3839EEFF2F2105E7C2AA91A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		11162DFF21E32CB200BFC2AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11162DFE21E32CB200BFC2AD /* SK_MagicRecord.app */,
+				11162E1921E32CB500BFC2AD /* SK_MagicRecordTests.xctest */,
+				11162E2421E32CB500BFC2AD /* SK_MagicRecordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11162E0021E32CB200BFC2AD /* SK_MagicRecord */ = {
+			isa = PBXGroup;
+			children = (
+				11162EF321E345B600BFC2AD /* Person+CoreDataClass.h */,
+				11162EF221E345B600BFC2AD /* Person+CoreDataClass.m */,
+				11162EF521E345B600BFC2AD /* Person+CoreDataProperties.h */,
+				11162EF421E345B600BFC2AD /* Person+CoreDataProperties.m */,
+				11162E0121E32CB200BFC2AD /* AppDelegate.h */,
+				11162E0221E32CB200BFC2AD /* AppDelegate.m */,
+				11162E0421E32CB200BFC2AD /* ViewController.h */,
+				11162E0521E32CB200BFC2AD /* ViewController.m */,
+				11162E0721E32CB200BFC2AD /* Main.storyboard */,
+				11162E0D21E32CB500BFC2AD /* Assets.xcassets */,
+				11162E0F21E32CB500BFC2AD /* LaunchScreen.storyboard */,
+				11162E1221E32CB500BFC2AD /* Info.plist */,
+				11162E1321E32CB500BFC2AD /* main.m */,
+				11162E0A21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodeld */,
+			);
+			path = SK_MagicRecord;
+			sourceTree = "<group>";
+		};
+		11162E1C21E32CB500BFC2AD /* SK_MagicRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				11162E1D21E32CB500BFC2AD /* SK_MagicRecordTests.m */,
+				11162E1F21E32CB500BFC2AD /* Info.plist */,
+			);
+			path = SK_MagicRecordTests;
+			sourceTree = "<group>";
+		};
+		11162E2721E32CB500BFC2AD /* SK_MagicRecordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11162E2821E32CB500BFC2AD /* SK_MagicRecordUITests.m */,
+				11162E2A21E32CB500BFC2AD /* Info.plist */,
+			);
+			path = SK_MagicRecordUITests;
+			sourceTree = "<group>";
+		};
+		11162EEF21E335D500BFC2AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11162EF021E335D600BFC2AD /* CoreData.framework */,
+				CBF2C424D8EB6D72D4222B37 /* libPods-SK_MagicRecord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3839EEFF2F2105E7C2AA91A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BE0A67B82FF73FD56A531B4 /* Pods-SK_MagicRecord.debug.xcconfig */,
+				D662003D926D49B7A8AF7DCA /* Pods-SK_MagicRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11162DFD21E32CB200BFC2AD /* SK_MagicRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11162E2D21E32CB500BFC2AD /* Build configuration list for PBXNativeTarget "SK_MagicRecord" */;
+			buildPhases = (
+				891BAD8C9319DB4D49F63BDC /* [CP] Check Pods Manifest.lock */,
+				11162DFA21E32CB200BFC2AD /* Sources */,
+				11162DFB21E32CB200BFC2AD /* Frameworks */,
+				11162DFC21E32CB200BFC2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SK_MagicRecord;
+			productName = SK_MagicRecord;
+			productReference = 11162DFE21E32CB200BFC2AD /* SK_MagicRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11162E1821E32CB500BFC2AD /* SK_MagicRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11162E3021E32CB500BFC2AD /* Build configuration list for PBXNativeTarget "SK_MagicRecordTests" */;
+			buildPhases = (
+				11162E1521E32CB500BFC2AD /* Sources */,
+				11162E1621E32CB500BFC2AD /* Frameworks */,
+				11162E1721E32CB500BFC2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11162E1B21E32CB500BFC2AD /* PBXTargetDependency */,
+			);
+			name = SK_MagicRecordTests;
+			productName = SK_MagicRecordTests;
+			productReference = 11162E1921E32CB500BFC2AD /* SK_MagicRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11162E2321E32CB500BFC2AD /* SK_MagicRecordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11162E3321E32CB500BFC2AD /* Build configuration list for PBXNativeTarget "SK_MagicRecordUITests" */;
+			buildPhases = (
+				11162E2021E32CB500BFC2AD /* Sources */,
+				11162E2121E32CB500BFC2AD /* Frameworks */,
+				11162E2221E32CB500BFC2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11162E2621E32CB500BFC2AD /* PBXTargetDependency */,
+			);
+			name = SK_MagicRecordUITests;
+			productName = SK_MagicRecordUITests;
+			productReference = 11162E2421E32CB500BFC2AD /* SK_MagicRecordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11162DF621E32CB200BFC2AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = AlexanderYeah;
+				TargetAttributes = {
+					11162DFD21E32CB200BFC2AD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					11162E1821E32CB500BFC2AD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 11162DFD21E32CB200BFC2AD;
+					};
+					11162E2321E32CB500BFC2AD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 11162DFD21E32CB200BFC2AD;
+					};
+				};
+			};
+			buildConfigurationList = 11162DF921E32CB200BFC2AD /* Build configuration list for PBXProject "SK_MagicRecord" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11162DF521E32CB200BFC2AD;
+			productRefGroup = 11162DFF21E32CB200BFC2AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11162DFD21E32CB200BFC2AD /* SK_MagicRecord */,
+				11162E1821E32CB500BFC2AD /* SK_MagicRecordTests */,
+				11162E2321E32CB500BFC2AD /* SK_MagicRecordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11162DFC21E32CB200BFC2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11162E1121E32CB500BFC2AD /* LaunchScreen.storyboard in Resources */,
+				11162E0E21E32CB500BFC2AD /* Assets.xcassets in Resources */,
+				11162E0921E32CB200BFC2AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11162E1721E32CB500BFC2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11162E2221E32CB500BFC2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		891BAD8C9319DB4D49F63BDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SK_MagicRecord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11162DFA21E32CB200BFC2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11162E0621E32CB200BFC2AD /* ViewController.m in Sources */,
+				11162E0321E32CB200BFC2AD /* AppDelegate.m in Sources */,
+				11162E1421E32CB500BFC2AD /* main.m in Sources */,
+				11162E0C21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodeld in Sources */,
+				11162EF721E345B600BFC2AD /* Person+CoreDataProperties.m in Sources */,
+				11162EF621E345B600BFC2AD /* Person+CoreDataClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11162E1521E32CB500BFC2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11162E1E21E32CB500BFC2AD /* SK_MagicRecordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11162E2021E32CB500BFC2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11162E2921E32CB500BFC2AD /* SK_MagicRecordUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11162E1B21E32CB500BFC2AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11162DFD21E32CB200BFC2AD /* SK_MagicRecord */;
+			targetProxy = 11162E1A21E32CB500BFC2AD /* PBXContainerItemProxy */;
+		};
+		11162E2621E32CB500BFC2AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11162DFD21E32CB200BFC2AD /* SK_MagicRecord */;
+			targetProxy = 11162E2521E32CB500BFC2AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11162E0721E32CB200BFC2AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11162E0821E32CB200BFC2AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11162E0F21E32CB500BFC2AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11162E1021E32CB500BFC2AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11162E2B21E32CB500BFC2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11162E2C21E32CB500BFC2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11162E2E21E32CB500BFC2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE0A67B82FF73FD56A531B4 /* Pods-SK_MagicRecord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SK_MagicRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-MagicRecord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11162E2F21E32CB500BFC2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D662003D926D49B7A8AF7DCA /* Pods-SK_MagicRecord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SK_MagicRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-MagicRecord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11162E3121E32CB500BFC2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_MagicRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-MagicRecordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SK_MagicRecord.app/SK_MagicRecord";
+			};
+			name = Debug;
+		};
+		11162E3221E32CB500BFC2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_MagicRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-MagicRecordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SK_MagicRecord.app/SK_MagicRecord";
+			};
+			name = Release;
+		};
+		11162E3421E32CB500BFC2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_MagicRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-MagicRecordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SK_MagicRecord;
+			};
+			name = Debug;
+		};
+		11162E3521E32CB500BFC2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_MagicRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-MagicRecordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SK_MagicRecord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11162DF921E32CB200BFC2AD /* Build configuration list for PBXProject "SK_MagicRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11162E2B21E32CB500BFC2AD /* Debug */,
+				11162E2C21E32CB500BFC2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11162E2D21E32CB500BFC2AD /* Build configuration list for PBXNativeTarget "SK_MagicRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11162E2E21E32CB500BFC2AD /* Debug */,
+				11162E2F21E32CB500BFC2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11162E3021E32CB500BFC2AD /* Build configuration list for PBXNativeTarget "SK_MagicRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11162E3121E32CB500BFC2AD /* Debug */,
+				11162E3221E32CB500BFC2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11162E3321E32CB500BFC2AD /* Build configuration list for PBXNativeTarget "SK_MagicRecordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11162E3421E32CB500BFC2AD /* Debug */,
+				11162E3521E32CB500BFC2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		11162E0A21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11162E0B21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodel */,
+			);
+			currentVersion = 11162E0B21E32CB200BFC2AD /* SK_MagicRecord.xcdatamodel */;
+			path = SK_MagicRecord.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 11162DF621E32CB200BFC2AD /* Project object */;
+}

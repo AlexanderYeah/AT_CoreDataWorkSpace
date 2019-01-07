@@ -1,0 +1,7 @@
+platform:ios, '9.0'
+
+target "SK_MagicRecord" do
+
+pod 'MagicalRecord'
+
+end
